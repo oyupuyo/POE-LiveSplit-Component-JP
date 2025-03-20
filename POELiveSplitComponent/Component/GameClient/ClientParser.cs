@@ -9,11 +9,11 @@ namespace POELiveSplitComponent.Component.GameClient
 
         private static readonly Regex START = new Regex(TIMESTAMP_SECTION + @".*Got Instance Details");
 
-        private static readonly Regex ZONE_NAME = new Regex(TIMESTAMP_SECTION + @".*You have entered (.*)\.$");
+        private static readonly Regex ZONE_NAME = new Regex(TIMESTAMP_SECTION + @".*あなたは(.*)に入場しました。$");
 
-        private static readonly Regex LEVEL_UP = new Regex(TIMESTAMP_SECTION + @".* is now level (\d+)$");
+        private static readonly Regex LEVEL_UP = new Regex(TIMESTAMP_SECTION + @".* はレベル(\d+)になりました$");
 
-        private static readonly Regex IZARO_DIALOGUE = new Regex(TIMESTAMP_SECTION + @".*Izaro: (.*)");
+        private static readonly Regex IZARO_DIALOGUE = new Regex(TIMESTAMP_SECTION + @".*イザロ: (.*)");
 
         private IClientEventHandler splitter;
 

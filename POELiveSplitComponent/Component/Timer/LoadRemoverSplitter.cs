@@ -10,8 +10,8 @@ namespace POELiveSplitComponent.Component.Timer
     public class LoadRemoverSplitter : IClientEventHandler
     {
         // Zone that lab runners must enter before the lab. Unique zone name.
-        private static IZone LAB_ENTRANCE = Zone.Parse("Aspirants' Plaza", new HashSet<IZone>());
-        private static IZone ASPIRANTS_TRIAL = Zone.Parse("Aspirant's Trial", new HashSet<IZone>());
+        private static IZone LAB_ENTRANCE = Zone.Parse("志す者の広場", new HashSet<IZone>());
+        private static IZone ASPIRANTS_TRIAL = Zone.Parse("志す者の試練", new HashSet<IZone>());
         private ComponentSettings settings;
         private ITimerModel timer;
         private long loadTimes = 0;
@@ -23,6 +23,7 @@ namespace POELiveSplitComponent.Component.Timer
 
         readonly List<string> IzaroDeathLines = new List<string>()
         {
+            // TODOO
             "I die for the Empire!",
             "You are free!",
             "Your destination is more dangerous than the journey, ascendant.",
